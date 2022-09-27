@@ -20,7 +20,7 @@ public:
     T dequeue(){
         return queue.pop_front();
     }
-    void is_empty(){
+    bool is_empty(){
         return queue.is_empty();
     }
 };
