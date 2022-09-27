@@ -67,8 +67,9 @@ public:
 
     T pop_front(){
         struct Node* ex_node = head->next;
-        if (ex_node == NULL){
-            return NULL;
+        if (ex_node == nullptr){
+            T trash;
+            return trash;
         }
         head->next = ex_node->next;
         T value = ex_node->data;
